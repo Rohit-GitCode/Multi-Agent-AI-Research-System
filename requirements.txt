@@ -1,12 +1,13 @@
+# Core LLM + LangChain ecosystem
 langchain
 langchain-core
 langchain-community
-
 
 # LLM Providers
 langchain-openai
 langchain-mistralai
 
+# OpenAI and Mistral
 openai
 mistralai
 
@@ -16,13 +17,14 @@ chromadb
 # Embeddings Models
 sentence-transformers
 
-# Document Loaders dependencies
+# Document Loaders dependencies and # Web scraping
 pypdf
 unstructured
 beautifulsoup4
+requests>=2.31.0
 lxml
 
-# Text Processing
+# Text Processing / # Token counting / text utils
 tiktoken
 
 # Environment Variables
@@ -43,6 +45,23 @@ streamlit
 tqdm
 requests
 
+# Tavily Search Tool
 tavily-python
 
+# Typing support (helps in bigger projects)
 pydantic
+
+# Async support (important for agents/tools)
+aiohttp>=3.9.0
+
+# Logging / debugging (optional but recommended)
+rich>=13.7.0
+
+# Retry + robustness
+tenacity>=8.2.0
+
+# JSON handling improvements
+orjson>=3.9.0
+
+# Optional (for advanced parsing / HTML cleanup)
+html5lib>=1.1
